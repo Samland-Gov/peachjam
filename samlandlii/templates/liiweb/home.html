@@ -1,0 +1,27 @@
+{% extends "liiweb/home.html" %}
+{% load i18n static %}
+{% block hero-logos %}
+  <img src="{% static 'images/africanlii-logo.svg' %}" alt="africanlii-logo"/>
+  <img src="{% static 'images/laws-africa-logo.png' %}" alt="laws-logo"/>
+  <img style="background-color: #2D5D88"
+       src="{% static 'images/jsco_logo.png' %}"
+       alt="jsco-logo"/>
+{% endblock %}
+{% block hero-headings %}
+  <h1 class="mb-4">{% trans 'Welcome to the Samland Legal Information Institute' %}</h1>
+  <h4 class="mb-4">
+    {% blocktrans trimmed %}
+      SamlandLii publishes the law of Samland for free online access.
+    {% endblocktrans %}
+  </h4>
+{% endblock %}
+{% block second-col-about %}
+  <div>
+    <strong>{% trans 'About' %}</strong>
+  </div>
+  <p>
+    {% blocktrans trimmed %}
+    SamlandLii provides free, unrestricted access to the primary and secondary legal materials of Samland.  Free Access to Law supports the rule of law, access to justice and transparency.
+  {% endblocktrans %}
+  </p>
+{% endblock %}

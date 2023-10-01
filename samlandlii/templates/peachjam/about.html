@@ -1,0 +1,23 @@
+{% extends "peachjam/layouts/main.html" %}
+{% load i18n %}
+{% block title %}
+  {% trans 'About' %}
+{% endblock %}
+{% block page-content %}
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4">{% trans 'About SamlandLII' %}</h1>
+      <p class="lead mb-4">
+        {% blocktrans trimmed %}
+        SamlandLII provides free, unrestricted access to the primary and secondary legal materials of Samland. Free Access to Law supports the rule of law, access to justice and transparency.
+      {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans trimmed %}
+       Samland Legal Information Institute ("SamlandLII") is a non-profit organization registered in Samland that aims to contribute to the continuing national progress by providing free access to the nation’s legal information.
+       Free access to legal information from other countries and regions of the world.
+      {% endblocktrans %}
+      </p>
+    </div>
+  </section>
+{% endblock %}
