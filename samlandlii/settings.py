@@ -1,11 +1,9 @@
 from django.utils.translation import gettext_lazy as _
 
 from liiweb.settings import *  # noqa
-# from peachjam.settings import *  # noqa
 
 INSTALLED_APPS = ["samlandlii.apps.SamlandLIIConfig"] + INSTALLED_APPS  # noqa
 
-# PEACHJAM["APP_NAME"] = "SamlandLII"
 
 JAZZMIN_SETTINGS["site_title"] = "SamlandLII"  # noqa
 JAZZMIN_SETTINGS["site_header"] = "SamlandLII"  # noqa
