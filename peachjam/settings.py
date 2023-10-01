@@ -66,7 +66,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "sass_processor",
-    "import_export",
+    # "import_export",
     "treebeard",
     "background_task",
     "ckeditor",
