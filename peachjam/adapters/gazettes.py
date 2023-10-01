@@ -31,7 +31,7 @@ class GazetteAdapter(Adapter):
 
         # start building queryset for updated gazettes
         updated_qs = (
-            CoreDocument.objects.filter(doc_type="gazette")
+            CoreDocument.objects.filter(doc_type="act")
             .non_polymorphic()
             .using("gazettes_africa")
         )
@@ -143,7 +143,7 @@ class GazetteAdapter(Adapter):
     def delete_document(self, expression_frbr_uri):
         ga_gazette = (
             CoreDocument.objects.filter(
-                doc_type="gazette", expression_frbr_uri=expression_frbr_uri
+                doc_type="act", expression_frbr_uri=expression_frbr_uri
             )
             .non_polymorphic()
             .using("gazettes_africa")
