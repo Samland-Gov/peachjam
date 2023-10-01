@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     "django_filters",
     "django_elasticsearch_dsl",
     "django_elasticsearch_dsl_drf",
-    # "jazzmin",
+    "jazzmin",
     "modeltranslation",
     "django.contrib.admin",
     "django.contrib.auth",
