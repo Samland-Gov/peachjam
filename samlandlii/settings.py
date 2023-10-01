@@ -4,6 +4,9 @@ from liiweb.settings import *  # noqa
 
 INSTALLED_APPS = ["samlandlii.apps.SamlandLIIConfig"] + INSTALLED_APPS  # noqa
 
+PEACHJAM = {
+    "APP_NAME": "SamlandLII"
+}
 
 JAZZMIN_SETTINGS["site_title"] = "SamlandLII"  # noqa
 JAZZMIN_SETTINGS["site_header"] = "SamlandLII"  # noqa
