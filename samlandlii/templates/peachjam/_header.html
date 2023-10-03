@@ -8,21 +8,9 @@
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link {% if view.navbar_link == 'gazettes' %}active{% endif %}"
-       href="{% url 'gazettes' %}">
-      {% trans 'Gazettes' %}
-    </a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link {% if view.navbar_link == 'legislation' %}active{% endif %}"
        href="{% url 'legislation_list' %}">
       {% trans 'Legislation' %}
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link {% if view.navbar_link == 'articles' %}active{% endif %}"
-       href="{% url 'article_list' %}">
-      {% trans 'Articles' %}
     </a>
   </li>
   <li class="nav-item">
